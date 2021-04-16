@@ -34,7 +34,7 @@ const MyRoutines = () => {
 
     const getPublicRoutine = () => {
         setIsLoading(true);
-        fetch(`http://fitnesstrac-kr.herokuapp.com/api/users/${user.username}/routines`, {
+        fetch(`https://fitnesstrac-kr.herokuapp.com/api/users/${user.username}/routines`, {
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -71,7 +71,7 @@ const MyRoutines = () => {
 
     const handleDelete = (id) => {
         console.log("🚀 ~ file: MyRoutines.js ~ line 63 ~ handleDelete ~ id", id)
-        fetch(`http://fitnesstrac-kr.herokuapp.com/api/routines/${id}`, {
+        fetch(`https://fitnesstrac-kr.herokuapp.com/api/routines/${id}`, {
             method: "DELETE",
             headers: {
                 'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ const MyRoutines = () => {
 
     const handleDeleteAct = (id) => {
         console.log("🚀 ~ file: MyRoutines.js ~ line 63 ~ handleDelete ~ id", id)
-        fetch(`http://fitnesstrac-kr.herokuapp.com/api/routine_activities/${id}`, {
+        fetch(`https://fitnesstrac-kr.herokuapp.com/api/routine_activities/${id}`, {
             method: "DELETE",
             headers: {
                 'Content-Type': 'application/json',

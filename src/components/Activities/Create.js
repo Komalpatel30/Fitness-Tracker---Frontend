@@ -40,7 +40,7 @@ const Create = (props) => {
 
     const submitForm = () => {
         console.log("token414", `Bearer ${localStorage.getItem('token')}`)
-        fetch('http://fitnesstrac-kr.herokuapp.com/api/activities', {
+        fetch('https://fitnesstrac-kr.herokuapp.com/api/activities', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

@@ -42,7 +42,7 @@ const CreateRoutine = (props) => {
     }
 
     const submitForm = () => {
-        fetch('http://fitnesstrac-kr.herokuapp.com/api/routines', {
+        fetch('https://fitnesstrac-kr.herokuapp.com/api/routines', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

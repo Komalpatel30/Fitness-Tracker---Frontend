@@ -49,7 +49,7 @@ const Update = (props) => {
     console.log('activity', activity);
     const submitForm = () => {
         console.log("token414", `Bearer ${localStorage.getItem('token')}`)
-        fetch(`http://fitnesstrac-kr.herokuapp.com/api/activities/${props.editActData.id}`, {
+        fetch(`https://fitnesstrac-kr.herokuapp.com/api/activities/${props.editActData.id}`, {
             method: "PATCH",
             headers: {
                 'Content-Type': 'application/json',

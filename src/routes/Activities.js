@@ -25,7 +25,7 @@ const Activities = () => {
     const getPublicRoutine = () => {
         setIsLoading(true);
         console.log("token2", `Bearer ${token}`)
-        fetch('http://fitnesstrac-kr.herokuapp.com/api/activities', {
+        fetch('https://fitnesstrac-kr.herokuapp.com/api/activities', {
             headers: {
                 'Content-Type': 'application/json',
             },

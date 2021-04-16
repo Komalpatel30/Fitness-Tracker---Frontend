@@ -27,7 +27,7 @@ const AddActivity = (props) => {
     const validateActivity = () => {
         let formError = {};
         let valid = true;
-        console.log("🚀 ~ file: AddActivity.js ~ line 29 ~ validateActivity ~ activity", `http://fitnesstrac-kr.herokuapp.com/api/routines/${data.data.id}/activities`)
+        console.log("🚀 ~ file: AddActivity.js ~ line 29 ~ validateActivity ~ activity", `https://fitnesstrac-kr.herokuapp.com/api/routines/${data.data.id}/activities`)
         // if ((activity.count).length < 3) {
         //     valid = false;
         //     formError = { ...formError, count: true }
@@ -43,7 +43,7 @@ const AddActivity = (props) => {
     }
 
     const updateRoutine = () => {
-        fetch(`http://fitnesstrac-kr.herokuapp.com/api/routines/${activity.routineId}/activities`, {
+        fetch(`https://fitnesstrac-kr.herokuapp.com/api/routines/${activity.routineId}/activities`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

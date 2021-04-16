@@ -33,7 +33,7 @@ const Register = () => {
     }
 
     const submitForm = () => {
-        fetch(`http://fitnesstrac-kr.herokuapp.com/api/users/register`, {
+        fetch(`https://fitnesstrac-kr.herokuapp.com/api/users/register`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

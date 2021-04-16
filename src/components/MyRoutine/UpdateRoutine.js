@@ -38,7 +38,7 @@ const UpdateRoutine = (props) => {
     }
 
     const updateRoutine = () => {
-        fetch(`http://fitnesstrac-kr.herokuapp.com/api/routines/${data.id}`, {
+        fetch(`https://fitnesstrac-kr.herokuapp.com/api/routines/${data.id}`, {
             method: "PATCH",
             headers: {
                 'Content-Type': 'application/json',
